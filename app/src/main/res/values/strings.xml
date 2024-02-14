@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">BodyMassIndex</string>
-    <string name="result" translatable="false">Body Mass Index is %</string>
+    <string name="body_mass_index_is">Body Mass Index is:</string>
+
 </resources>

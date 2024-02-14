@@ -25,7 +25,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.bodymassindex.R.string.result
 import com.example.bodymassindex.ui.theme.BodyMassIndexTheme
 
 class MainActivity : ComponentActivity() {
@@ -82,7 +81,7 @@ fun Bmi() {
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             modifier = Modifier.fillMaxWidth()
         )
-        Text(text = stringResource(result, String.format("%.2f", bmi).replace(',','.')))
+       Text(text = stringResource(R.string.body_mass_index_is, String.format("%2f",bmi).replace('.','.')) + bmi)
     }
 }
 @Preview(showBackground = true)
